@@ -2,17 +2,17 @@
 
 > Turn two interests into one idea.
 
-**Mahreen Remix** is an interactive web experience created for Mahreen Indonesia. It helps users combine their interests with a purpose and transform them into a new creative idea.
-
-The concept is simple:
+An interactive web experience created for Mahreen Indonesia that helps users combine their interests with a purpose and transform them into a new creative idea.
 
 **Your Interest + Your Impact → A New Idea**
+
+[🌐 Live Demo](https://mahreen-remix.vercel.app/) · [💻 GitHub](https://github.com/nabillaaaputri/mahreen-remix)
 
 ---
 
 ## ✨ Features
 
-- 🎯 Choose an interest
+- Choose your interest
   - Technology
   - Design
   - Business
@@ -20,22 +20,22 @@ The concept is simple:
   - Social
   - Education
 
-- 🌱 Choose an impact
+- Choose where you want to make an impact
   - Build Communities
   - Grow Businesses
   - Develop Skills
   - Improve Environment
   - Create Digital Experiences
 
-- 🔀 Remix two choices into a creative idea
-- 📱 Responsive design for different screen sizes
-- 🎨 Editorial and interactive visual experience
-- 🧭 Multi-page navigation
-- ⚡ Smooth interactions and transitions
+- Remix two choices into a creative idea
+- Responsive design
+- Interactive user experience
+- Multi-page navigation
+- Smooth transitions and interactions
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack
 
 - React.js
 - Vite
@@ -45,18 +45,15 @@ The concept is simple:
 
 ---
 
-## 📂 Project Structure
+## 💡 Concept
+
+Mahreen Remix is built around a simple idea:
 
 ```text
-mahreen-remix/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── ...
-├── index.html
-├── package.json
-└── README.md
+YOUR INTEREST
+      +
+YOUR IMPACT
+      ↓
+    REMIX
+      ↓
+  NEW IDEA
