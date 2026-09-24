@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import RemixSymbol from '../components/RemixSymbol'
 import { remixInterests } from '../data/opportunities'
 
@@ -15,9 +14,9 @@ function Home() {
               WHAT IF<br />YOUR INTEREST<br /><span className="text-[#d9573f]">MET ANOTHER IDEA?</span>
             </h1>
             <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center">
-              <Link to="/remix" className="inline-flex w-fit items-center bg-[#17221d] px-6 py-4 text-xs font-bold uppercase tracking-[0.22em] text-[#f3f0e8] transition hover:bg-[#d9573f]">
+              <a href="https://mahreen-remix.vercel.app/remix" className="inline-flex w-fit items-center bg-[#17221d] px-6 py-4 text-xs font-bold uppercase tracking-[0.22em] text-[#f3f0e8] transition hover:bg-[#d9573f]">
                 START REMIXING →
-              </Link>
+              </a>
               <p className="max-w-xs text-sm font-semibold leading-6">Take what you're into.<br />Let's see what it can become.</p>
             </div>
           </div>
@@ -48,7 +47,7 @@ function Home() {
           <div>
             <h2 className="display-type max-w-5xl text-[clamp(2.75rem,4.5vw,5.25rem)] uppercase leading-[0.98]">IDEAS DON'T EXIST IN ISOLATION.</h2>
             <p className="mt-10 max-w-xl text-lg leading-8 text-[#45534a]">Mahreen is a space where young people, communities, and organizations meet through creativity, technology, education, and collaboration.</p>
-            <Link to="/about" className="mt-8 inline-flex border-b-2 border-[#17221d] pb-2 text-xs font-bold uppercase tracking-[0.2em] transition hover:border-[#d9573f] hover:text-[#d9573f]">DISCOVER MAHREEN →</Link>
+            <a href="https://mahreen-remix.vercel.app/about" className="mt-8 inline-flex border-b-2 border-[#17221d] pb-2 text-xs font-bold uppercase tracking-[0.2em] transition hover:border-[#d9573f] hover:text-[#d9573f]">DISCOVER MAHREEN →</a>
           </div>
         </div>
       </section>
@@ -74,7 +73,7 @@ function Home() {
             <div className="mt-10 flex items-center justify-center gap-4 text-center"><span className="h-px w-10 bg-[#f4b942]" /><p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f4b942]">REMIX / A NEW IDEA</p><span className="h-px w-10 bg-[#f4b942]" /></div>
           </div>
           <p className="mt-10 max-w-xl text-base leading-7 text-[#f3f0e8]/75">Take what you're into. Mix it with where you want to make an impact.</p>
-          <Link to="/remix" className="mt-7 inline-flex border-b-2 border-[#f4b942] pb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#f4b942] transition hover:border-[#d9573f] hover:text-[#d9573f]">SEE HOW IT WORKS →</Link>
+          <a href="https://mahreen-remix.vercel.app/remix" className="mt-7 inline-flex border-b-2 border-[#f4b942] pb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#f4b942] transition hover:border-[#d9573f] hover:text-[#d9573f]">SEE HOW IT WORKS →</a>
           <div className="mt-14 flex flex-wrap gap-x-8 gap-y-4 border-t border-[#f3f0e8]/30 pt-6">
             {remixInterests.map((interest) => <span key={interest.id} className="text-xs font-bold uppercase tracking-[0.2em] text-[#f3f0e8]/70">{interest.label}</span>)}
           </div>
@@ -82,6 +81,33 @@ function Home() {
       </section>
 
       <section className="relative overflow-hidden border-t border-[#14201b]/20 bg-[#f4f0e7] text-[#14201b]">
+        <div className="mx-auto grid max-w-[1600px] gap-12 border-b border-[#14201b]/20 px-5 py-16 sm:px-8 lg:grid-cols-[0.72fr_1.28fr] lg:gap-20 lg:px-12 lg:py-24">
+          <div className="relative">
+            <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#d9573f]">THE IDEA BEHIND THE REMIX</p>
+            <h2 className="display-type mt-6 max-w-md text-[clamp(2.75rem,4.5vw,5.25rem)] uppercase leading-[0.9]">WHY<br /><span className="text-[#d9573f]">MAHREEN</span><br />REMIX?</h2>
+            <div className="mt-10 hidden h-24 w-px bg-[#d9573f] lg:block" />
+          </div>
+          <div className="max-w-3xl text-base leading-7 text-[#45534a] sm:text-lg sm:leading-8">
+            <div className="border-l-2 border-[#f4b942] pl-5 sm:pl-7">
+              <article className="border-t border-[#14201b]/25 py-6 first:border-t-0 first:pt-0">
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d9573f]">01 — THE CONCEPT</p>
+                <p className="mt-3">Mahreen Remix adalah pengalaman interaktif yang mengajak generasi muda mengubah minat menjadi ide yang dapat memberi dampak. Pengguna memilih satu hal yang mereka minati dan satu tujuan yang ingin mereka beri dampak, kemudian menggabungkannya melalui konsep Remix untuk menghasilkan sebuah ide baru.</p>
+              </article>
+              <article className="border-t border-[#14201b]/25 py-6">
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d9573f]">02 — WHY THIS IDEA</p>
+                <p className="mt-3">Ide ini dipilih karena setiap anak muda memiliki minat, kemampuan, dan cara berkarya yang berbeda. Dengan menghubungkan ketertarikan pribadi dengan kebutuhan di sekitar, proses berkarya menjadi lebih dekat, relevan, dan mudah dibayangkan.</p>
+              </article>
+              <article className="border-t border-[#14201b]/25 py-6 last:pb-0">
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d9573f]">03 — THE IMPACT</p>
+                <p className="mt-3">Melalui Mahreen Remix, diharapkan generasi muda dapat melihat bahwa berkarya untuk Indonesia tidak selalu harus dimulai dari sesuatu yang besar. Sebuah ketertarikan sederhana dapat menjadi awal dari ide yang bermanfaat bagi komunitas, bisnis, lingkungan, keterampilan, maupun pengalaman digital.</p>
+              </article>
+            </div>
+            <div className="mt-10 border-t border-[#14201b]/25 pt-6">
+              <p className="display-type text-2xl uppercase leading-[0.95] text-[#14201b] sm:text-3xl">YOUR INTEREST. YOUR IDEA. YOUR CONTRIBUTION.</p>
+              <p className="mt-3 text-xs font-bold uppercase tracking-[0.28em] text-[#d9573f]">BERKARYA UNTUK INDONESIA.</p>
+            </div>
+          </div>
+        </div>
         <div className="relative mx-auto flex max-w-[1600px] flex-col gap-10 px-5 py-16 sm:px-8 lg:flex-row lg:items-end lg:justify-between lg:px-12 lg:py-20">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#d9573f]">04 / YOUR NEXT MOVE</p>
@@ -89,7 +115,7 @@ function Home() {
           </div>
           <div className="flex flex-col items-start gap-7 lg:items-end">
             <RemixSymbol type="business" className="h-24 w-24 border-2 text-[#d9573f] lg:h-32 lg:w-32" label="Opportunity symbol" />
-            <Link to="/remix" className="bg-[#14201b] px-7 py-5 text-xs font-bold uppercase tracking-[0.22em] text-[#f4f0e7] transition hover:bg-[#f5b93f] hover:text-[#14201b]">REMIX YOUR INTERESTS →</Link>
+            <a href="https://mahreen-remix.vercel.app/remix" className="bg-[#14201b] px-7 py-5 text-xs font-bold uppercase tracking-[0.22em] text-[#f4f0e7] transition hover:bg-[#f5b93f] hover:text-[#14201b]">REMIX YOUR INTERESTS →</a>
           </div>
         </div>
       </section>
