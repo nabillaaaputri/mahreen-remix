@@ -18,8 +18,8 @@ function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#17221d]/20 bg-[#f3f0e8]/90 backdrop-blur-sm">
       <div className="relative mx-auto flex max-w-[1600px] items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
-        <Link to="/" className="display-type text-2xl uppercase tracking-[-0.08em] text-[#17221d]" aria-label="Mahreen home">
-          MAHREEN
+        <Link to="/" className="display-type whitespace-nowrap text-2xl uppercase tracking-[-0.08em] text-[#17221d]" aria-label="Mahreen Remix home">
+          MAHREEN REMIX
         </Link>
 
         <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 md:flex">

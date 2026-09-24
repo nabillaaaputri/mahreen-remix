@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import RemixSymbol from '../components/RemixSymbol'
 import { getRemixResult, remixInterests, remixPurposes } from '../data/opportunities'
 
+const optionNumberClass = 'text-xs font-bold leading-none tracking-[0.2em] text-[#14201b]'
+
 function Remix() {
   const [selectedInterest, setSelectedInterest] = useState('technology')
   const [selectedPurpose, setSelectedPurpose] = useState('my-community')
@@ -64,10 +66,10 @@ function Remix() {
               return (
                   <button key={interest.id} type="button" onClick={() => chooseInterest(interest.id)} className={`group flex w-full items-center justify-between border-b border-[#14201b]/25 py-5 text-left transition sm:py-6 ${active ? 'bg-[#f5b93f] px-4' : 'hover:bg-[#fdfbf5]'}`}>
                   <span className="flex items-center gap-5">
-                    <span className="text-xs font-bold tracking-[0.2em] text-[#d9573f]">0{index + 1}</span>
-                    <span className="display-type text-2xl uppercase leading-[0.98] sm:text-4xl">{interest.label}</span>
+                    <span className={optionNumberClass}>0{index + 1}</span>
+                    <span className="display-type text-xl uppercase leading-[0.98] sm:text-3xl">{interest.label}</span>
                   </span>
-                  <RemixSymbol type={interest.id} className={`h-12 w-12 sm:h-16 sm:w-16 ${active ? 'text-[#d9573f]' : 'text-[#17221d]/50 group-hover:text-[#d9573f]'}`} label={`${interest.label} symbol`} />
+                  <RemixSymbol type={interest.id} className={`h-9 w-9 border sm:h-10 sm:w-10 ${active ? 'text-[#d9573f]' : 'text-[#17221d]/50 group-hover:text-[#d9573f]'}`} label={`${interest.label} symbol`} />
                 </button>
               )
             })}
@@ -89,7 +91,7 @@ function Remix() {
                 return (
                   <button key={purpose.id} type="button" onClick={() => choosePurpose(purpose.id)} className={`flex w-full items-center justify-between border-b border-[#14201b]/25 py-5 text-left transition sm:py-6 ${active ? 'bg-[#f5b93f] px-4 text-[#14201b]' : 'hover:bg-[#fdfbf5]'}`}>
                     <span className="flex items-center gap-5">
-                      <span className="text-xs font-bold tracking-[0.2em]">0{index + 1}</span>
+                      <span className={optionNumberClass}>0{index + 1}</span>
                       <span className="display-type text-xl uppercase leading-[0.98] sm:text-3xl">{purpose.label}</span>
                     </span>
                     <span className="text-3xl font-light">{active ? '×' : '+'}</span>
